@@ -1,12 +1,15 @@
 package com.felipebrito.desafio_itau.dto;
 
 import com.felipebrito.desafio_itau.model.Transaction;
+import jakarta.validation.constraints.NotNull;
 
 import java.time.OffsetDateTime;
 
 public class TransactionDTO {
 
+    @NotNull
     private Double valor;
+    @NotNull
     private OffsetDateTime dataHora;
 
     public TransactionDTO() {
